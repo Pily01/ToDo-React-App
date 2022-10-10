@@ -1,0 +1,36 @@
+.form-container{
+    margin-top: 30px;
+}
+
+.NewToDoForm{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.NewToDoForm label{
+    min-width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.NewToDoForm input{
+    flex-grow: 1;
+    border-color:#eb5252;
+    padding: 0.3rem 1.5rem;
+    font-size: initial;
+    border-radius: 5px;
+    font-family: "Quicksand", sans-serif;
+    height: 3rem;
+}
+
+.NewToDoForm button{
+    padding: 0 1.3rem;
+    border: none;
+    border-radius: 5px;
+    background: rgb(235, 82, 82);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 5px;
+    cursor: pointer;
+}

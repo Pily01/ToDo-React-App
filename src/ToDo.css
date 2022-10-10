@@ -1,0 +1,87 @@
+.ToDo {
+    display: flex;
+    margin: 0 -3rem 4px;
+    padding: 1.1rem 3rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(209, 207, 207, 0.2);
+}
+
+.ToDo p{
+    cursor: pointer;
+}
+
+.task{
+    position: relative;
+    transition: opacity 0.4s linear;
+}
+
+.task.completed{
+    opacity: 0.6;
+}
+
+.task.completed:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -0.5rem;
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: rgb(235, 82, 82);
+    animation: strikeitem 0.5s ease-out 0s forwards;
+}
+
+@keyframes strikeitem {
+    to{
+        width: calc(100% + 1rem);
+    }
+}
+
+.buttons{
+    flex-shrink: 0;
+    padding-left: 0.7em;
+}
+
+.buttons button{
+    border: none;
+    font-size: 1em;
+    margin: 0.4em;
+    background: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    color: rgb(235, 82, 82);
+}
+
+.edit-form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.edit-form label{
+    min-width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.edit-form input{
+    flex-grow: 1;
+    border: none;
+    padding: 0.3rem 1.5rem;
+    font-size: initial;
+    border-radius: 5px;
+    font-family: "Quicksand", sans-serif;
+    height: 3rem;
+}
+
+.edit-form button{
+    border: none;
+    font-size: 1em;
+    margin: 0.4em;
+    background: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    color: rgb(235, 82, 82);
+    transition: back;
+}
+
